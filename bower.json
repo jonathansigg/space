@@ -1,0 +1,27 @@
+{
+  "name": "johnny",
+  "authors": [
+    "Jonathan Sigg <jonathan.sigg@cs2.ch>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "font-awesome": "^4.6.3"
+  },
+  "overrides": {
+    "font-awesome": {
+      "main": [
+        "./fonts/FontAwesome.otf",
+        "./fonts/fontawesome-webfont.eot",
+        "./fonts/fontawesome-webfont.svg",
+        "./fonts/fontawesome-webfont.ttf",
+        "./fonts/fontawesome-webfont.woff",
+        "./fonts/fontawesome-webfont.woff2",
+        "./scss/font-awesome.scss"
+      ]
+    }
+  },
+  "devDependencies": {
+    "font-awesome": "^4.6.3"
+  }
+}

@@ -1,0 +1,36 @@
+/**
+  * @description: All scss variables
+  * @author: Jonathan Sigg
+  */
+
+/* colors */
+$color-space:           #435E71;
+$color-planet:          #FF5E41;
+$color-planet-darker:   rgba(black,0.2);
+$color-sinkhole:        #C74228; //#D65035;
+$color-sinkhole-darker: darken($color-sinkhole,10%);
+$color-spaceship:       #F0F0F0;
+$color-fire:            #D11F1F;
+
+
+/* dimensions */
+$planet-dimensions:     300px;
+$planet-shadow:         50px;
+
+$sinkhole-shadow:       5px;
+$sinkhole-1-dimension:  55px;
+$sinkhole-2-dimension:  40px;
+$sinkhole-3-dimension:  25px;
+
+/* sinhole positions */
+$sinkhole-1-top:        120px;
+$sinkhole-1-left:       30px;
+
+$sinkhole-2-top:        30px;
+$sinkhole-2-left:      130px;
+
+$sinkhole-3-top:        160px;
+$sinkhole-3-left:      160px;
+
+/* animations */
+$planet-rotation:       10s;

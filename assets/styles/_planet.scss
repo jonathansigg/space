@@ -1,0 +1,65 @@
+#planet {
+  background: $color-planet;
+  width: $planet-dimensions;
+  height: $planet-dimensions;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 100%;
+  animation: rotateplanet $planet-rotation linear infinite;
+  transform-origin: top left;
+
+  /* sinkholes */
+  .sinkhole {
+    position: absolute;
+    background: $color-sinkhole;
+    border-radius: 100%;
+  }
+  .sinkhole:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border-left: $sinkhole-shadow solid $color-sinkhole-darker;
+    border-top: $sinkhole-shadow solid $color-sinkhole-darker;
+    animation: rotatesinkhole $planet-rotation linear infinite;
+    transform-origin: center;
+  }
+
+  .sinkhole.sh-1 {
+    width: $sinkhole-1-dimension;
+    height: $sinkhole-1-dimension;
+    top: $sinkhole-1-top;
+    left: $sinkhole-1-left;
+  }
+  .sinkhole.sh-2 {
+    width: $sinkhole-2-dimension;
+    height: $sinkhole-2-dimension;
+    top: $sinkhole-2-top;
+    left: $sinkhole-2-left;
+  }
+  .sinkhole.sh-3 {
+    width: $sinkhole-3-dimension;
+    height: $sinkhole-3-dimension;
+    top: $sinkhole-3-top;
+    left: $sinkhole-3-left;
+  }
+}
+
+#planet:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: transparent;
+  border-bottom: $planet-shadow solid $color-planet-darker;
+  border-right: $planet-shadow solid $color-planet-darker;
+  animation: planetshadow $planet-rotation linear infinite;
+  transform-origin: center;
+}
