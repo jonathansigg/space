@@ -8,7 +8,10 @@
   border-bottom: $color-button-shadow solid $button-border-lg;
   border-right: $color-button-shadow solid $button-border;
   cursor: pointer;
-  transition: all $animation-base;
+  transition: color $animation-base, background $animation-base, top $animation-base, left $animation-base, border-color $animation-base;
+  margin: 0 $padding;
+  position: relative;
+  user-select: none;
 }
 
 .button:hover{
@@ -23,6 +26,10 @@
   padding-right: ($padding * 2 - $button-border);
   padding-bottom: ($padding - $button-border-lg);
   outline: none;
+  margin-right: ($padding + $button-border * 2);
+  margin-bottom: ($button-border-lg + $button-border);
+  top: ($button-border-lg * 2);
+  left: ($button-border * 2);
 }
 
 .button:not(:active):focus {
@@ -34,17 +41,14 @@
   border-right-color: $color-button-hover;
 }
 
-#play {
+#main-buttons {
   position: absolute;
   z-index: 10;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  top: calc(50% + #{($planet-dimensions * 0.7)});
 }
 
-#instruct {
-  position: absolute;
-  z-index: 10;
-  top: calc(50% + #{($planet-dimensions * 0.85)});
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+#play, #instruct {
+  float: left;
 }
