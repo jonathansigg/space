@@ -7,8 +7,9 @@
   <body class="waiting">
     <div id="space">
       <div id="main-buttons" class="buttons-wrap">
-        <span id="play" class="button">Play</span>
-        <span id="instruct" class="button">Instructions</span>
+        <span id="play" class="button"><i class="icon fa fa-play"></i>Play</span>
+        <span id="instruct" class="button"><i class="icon fa fa-info"></i>Instructions</span>
+        <a target="_blank" href="https://github.com/jonathansigg/space" class="button"><i class="icon fa fa-github"></i>View on GitHub</a>
       </div>
       <div id="rocket">
 
@@ -19,6 +20,21 @@
         <div class="sinkhole sh-3"></div>
       </div>
       <img id="logo" src="dist/images/space.svg" alt="Space by Jonathan Sigg">
+      <div id="modal-instruct" class="modal">
+        <div class="modal-back"></div>
+        <div class="modal-wrap">
+          <div class="modal-header">
+            <div class="modal-title">Instructions</div>
+            <div class="modal-close"><i class="fa fa-close"></i></div>
+          </div>
+          <div class="modal-body">
+            <h3>How to Play?</h3>
+            <p>
+              With your up, right, down and left key
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="dist/scripts/jquery.js"></script>
     <script src="dist/scripts/main.js"></script>

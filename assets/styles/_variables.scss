@@ -22,15 +22,19 @@ $color-spaceship:             #F0F0F0 !default;
 $color-fire:                  #D11F1F !default;
 $color-button:                #F0F0F0 !default;
 $color-button-shadow:         darken($color-button,15%) !default;
-$color-button-hover:          #1BC279;
+$color-button-hover:          #1BC279 !default;
 $color-button-hover-shadow:   darken($color-button-hover,15%) !default;
-$color-button-background:     darken($color-space,4%);
+$color-button-background:     darken($color-space,4%) !default;
+$color-primary:               #F0F0F0 !default;
+$color-hover:                 #1BC279 !default;
 
 
 /* dimensions */
 $planet-dimensions:           300px !default;
 $planet-shadow-big:           40px !default;
 $planet-shadow-small:         30px !default;
+$min-width:                   980px !default;
+$min-height:                  700px !default;
 
 $sinkhole-shadow:             5px !default;
 $sinkhole-1-dimension:        55px !default;

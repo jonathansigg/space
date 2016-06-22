@@ -9,9 +9,13 @@
   border-right: $color-button-shadow solid $button-border;
   cursor: pointer;
   transition: color $animation-base, background $animation-base, top $animation-base, left $animation-base, border-color $animation-base;
-  margin: 0 $padding;
+  margin: $padding $padding 0;
   position: relative;
   user-select: none;
+
+  .icon {
+    margin-right: $padding;
+  }
 }
 
 .button:hover{
@@ -21,7 +25,7 @@
   border-left: none;
 }
 
-.button:active, .button:focus {
+.button:active {
   border: none;
   padding-right: ($padding * 2 - $button-border);
   padding-bottom: ($padding - $button-border-lg);
@@ -32,11 +36,8 @@
   left: ($button-border * 2);
 }
 
-.button:not(:active):focus {
-  border: $color-button-shadow solid $button-border;
-}
 
-.button:hover:active, .button:hover:focus {
+.button:hover:active {
   border-bottom: $color-button-hover solid $button-border;
   border-right-color: $color-button-hover;
 }
@@ -49,6 +50,8 @@
   top: calc(50% + #{($planet-dimensions * 0.7)});
 }
 
-#play, #instruct {
-  float: left;
+.buttons-wrap {
+  .button {
+    float: left;
+  }
 }

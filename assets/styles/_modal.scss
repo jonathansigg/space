@@ -1,0 +1,63 @@
+.modal {
+  transition: all $animation-base;
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  .modal-back {
+    background: rgba(black,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 0;
+  }
+
+  .modal-wrap {
+    border-radius: $border-radius;
+    padding: $padding;
+    width: ($min-width - $padding * 2);
+    height: auto;
+    max-height: 100%;
+    margin: ($padding * 2) auto 0;
+    position: relative;
+    z-index: 1;
+    top: -100px;
+    transition: top $animation-base;
+  }
+
+  .modal-title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .modal-close {
+    position: absolute;
+    right: ($padding * 3);
+    top: ($padding * 3);
+    cursor: pointer;
+    transition: color $animation-base;
+  }
+
+  .modal-close:hover {
+    color: $color-hover;
+  }
+
+  .modal-header, .modal-body {
+    background: $color-space;
+    padding: ($padding * 2);
+  }
+}
+
+.modal.show{
+  visibility: visible;
+  opacity: 1;
+
+  .modal-wrap { top: 0; }
+}
