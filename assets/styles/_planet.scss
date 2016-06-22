@@ -58,8 +58,8 @@
   height: 100%;
   border-radius: 100%;
   background: transparent;
-  border-bottom: $planet-shadow solid $color-planet-darker;
-  border-right: $planet-shadow solid $color-planet-darker;
+  border-bottom: $planet-shadow-small solid $color-planet-darker;
+  border-right: $planet-shadow-big solid $color-planet-darker;
   animation: planetshadow $planet-rotation linear infinite;
   transform-origin: center;
 }

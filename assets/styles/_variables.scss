@@ -15,7 +15,8 @@ $color-fire:            #D11F1F;
 
 /* dimensions */
 $planet-dimensions:     300px;
-$planet-shadow:         50px;
+$planet-shadow-big:     40px;
+$planet-shadow-small:   30px;
 
 $sinkhole-shadow:       5px;
 $sinkhole-1-dimension:  55px;
@@ -27,10 +28,10 @@ $sinkhole-1-top:        120px;
 $sinkhole-1-left:       30px;
 
 $sinkhole-2-top:        30px;
-$sinkhole-2-left:      130px;
+$sinkhole-2-left:       130px;
 
 $sinkhole-3-top:        160px;
-$sinkhole-3-left:      160px;
+$sinkhole-3-left:       160px;
 
 /* animations */
-$planet-rotation:       10s;
+$planet-rotation:       20s;
