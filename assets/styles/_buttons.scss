@@ -1,0 +1,50 @@
+.button {
+  display: block;
+  padding: $padding ($padding * 2);
+  color: $color-button;
+  background: $color-button-background;
+  font-weight: 700;
+  border-radius: $border-radius;
+  border-bottom: $color-button-shadow solid $button-border-lg;
+  border-right: $color-button-shadow solid $button-border;
+  cursor: pointer;
+  transition: all $animation-base;
+}
+
+.button:hover{
+  background: $color-button-hover;
+  border-color: $color-button-hover-shadow;
+  border-top: none;
+  border-left: none;
+}
+
+.button:active, .button:focus {
+  border: none;
+  padding-right: ($padding * 2 - $button-border);
+  padding-bottom: ($padding - $button-border-lg);
+  outline: none;
+}
+
+.button:not(:active):focus {
+  border: $color-button-shadow solid $button-border;
+}
+
+.button:hover:active, .button:hover:focus {
+  border-bottom: $color-button-hover solid $button-border;
+  border-right-color: $color-button-hover;
+}
+
+#play {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#instruct {
+  position: absolute;
+  z-index: 10;
+  top: calc(50% + #{($planet-dimensions * 0.85)});
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}

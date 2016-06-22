@@ -3,35 +3,49 @@
   * @author: Jonathan Sigg
   */
 
+/* global */
+$padding:                     10px !default;
+$button-border:               2px !default;
+$button-border-lg:            5px !default;
+$border-radius:               10px !default;
+$animation-dur:               100ms !default;
+$animation-type:              ease-in-out !default;
+$animation-base:              $animation-dur $animation-type !default;
+
 /* colors */
-$color-space:           #435E71;
-$color-planet:          #FF5E41;
-$color-planet-darker:   rgba(black,0.2);
-$color-sinkhole:        #C74228; //#D65035;
-$color-sinkhole-darker: darken($color-sinkhole,10%);
-$color-spaceship:       #F0F0F0;
-$color-fire:            #D11F1F;
+$color-space:                 #435E71 !default;
+$color-planet:                #FF5E41 !default;
+$color-planet-darker:         rgba(black,0.2) !default;
+$color-sinkhole:              #C74228 !default; //#D65035 !default;
+$color-sinkhole-darker:       darken($color-sinkhole,10%) !default;
+$color-spaceship:             #F0F0F0 !default;
+$color-fire:                  #D11F1F !default;
+$color-button:                #F0F0F0 !default;
+$color-button-shadow:         darken($color-button,15%) !default;
+$color-button-hover:          #1BC279;
+$color-button-hover-shadow:   darken($color-button-hover,15%) !default;
+$color-button-background:     darken($color-space,4%);
 
 
 /* dimensions */
-$planet-dimensions:     300px;
-$planet-shadow-big:     40px;
-$planet-shadow-small:   30px;
+$planet-dimensions:           300px !default;
+$planet-shadow-big:           40px !default;
+$planet-shadow-small:         30px !default;
 
-$sinkhole-shadow:       5px;
-$sinkhole-1-dimension:  55px;
-$sinkhole-2-dimension:  40px;
-$sinkhole-3-dimension:  25px;
+$sinkhole-shadow:             5px !default;
+$sinkhole-1-dimension:        55px !default;
+$sinkhole-2-dimension:        40px !default;
+$sinkhole-3-dimension:        25px !default;
 
 /* sinhole positions */
-$sinkhole-1-top:        120px;
-$sinkhole-1-left:       30px;
+$sinkhole-1-top:              120px !default;
+$sinkhole-1-left:             30px !default;
 
-$sinkhole-2-top:        30px;
-$sinkhole-2-left:       130px;
+$sinkhole-2-top:              30px !default;
+$sinkhole-2-left:             130px !default;
 
-$sinkhole-3-top:        160px;
-$sinkhole-3-left:       160px;
+$sinkhole-3-top:              160px !default;
+$sinkhole-3-left:             160px !default;
 
 /* animations */
-$planet-rotation:       20s;
+$planet-rotation:             20s !default;
